@@ -16,16 +16,6 @@ class Professor extends Usuario {
 		this.instituto = instituto;
 	}
 	
-	@Override
-	public void setEmprestimos() {
-		if(this.emprestimos < 6) {
-			this.emprestimos += 1;
-			System.out.println("Emprestimo registrado.");
-		} else {
-			System.out.println("Limite de emprestimos atingido.");
-		}
-	}
-	
 	public String getNUSP() {
 		return this.nUSP;
 	}

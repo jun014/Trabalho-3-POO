@@ -15,7 +15,6 @@ class Usuario {
 	protected String CPF;
 	protected String endereco;
 	protected String telefone;
-	protected int emprestimos;
 	
 	Scanner entrada = new Scanner(System.in);
 		
@@ -41,15 +40,6 @@ class Usuario {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
-	}
-	
-	public void setEmprestimos() {
-		if(this.emprestimos < 2) {
-			this.emprestimos += 1;
-			System.out.println("Emprestimo registrado.");
-		} else {
-			System.out.println("Limite de emprestimos atingido.");
-		}
 	}
 	
 	public int getCodigo() {
@@ -82,7 +72,6 @@ class Usuario {
 		this.setEndereco(entrada.nextLine());
 		System.out.println("Telefone:");
 		this.setTelefone(entrada.nextLine());
-		this.emprestimos = 0;
 	}
 	
 	public void setInfoSel(int codigo, int tipo, String nome) {

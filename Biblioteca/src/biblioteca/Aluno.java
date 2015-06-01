@@ -16,16 +16,6 @@ class Aluno extends Usuario {
 		this.curso = curso;
 	}
 	
-	@Override
-	public void setEmprestimos() {
-		if(this.emprestimos < 4) {
-			this.emprestimos += 1;
-			System.out.println("Emprestimo registrado.");
-		} else {
-			System.out.println("Limite de emprestimos atingido.");
-		}
-	}
-	
 	public String getNUSP() {
 		return this.nUSP;
 	}
