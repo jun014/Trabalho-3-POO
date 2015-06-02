@@ -13,7 +13,6 @@ public class CadastroLivro {
 	private static int codigo;
 	private int tipo;
 	private String titulo;
-	private int quantidade;
 	private LocalDate dataReg;
 	
 	Scanner entrada = new Scanner(System.in);
@@ -35,10 +34,6 @@ public class CadastroLivro {
 		this.titulo = titulo;
 	}
 	
-	public void setQuantidade(int quantidade) {
-		this.quantidade = quantidade;
-	}
-	
 	public void setDataReg(LocalDate data) {
 		this.dataReg = data;
 	}
@@ -55,10 +50,6 @@ public class CadastroLivro {
 		return this.titulo;
 	}
 	
-	public int getQuantidade() {
-		return this.quantidade;
-	}
-	
 	public LocalDate getDataReg() {
 		return this.dataReg;
 	}
@@ -66,8 +57,6 @@ public class CadastroLivro {
 	public void setInfo() {
 		System.out.println("Titulo:");
 		this.setTitulo(entrada.nextLine());
-		System.out.println("Quantidade:");
-		this.setQuantidade(entrada.nextInt());
 		this.setDataReg(data);
 	}
 
